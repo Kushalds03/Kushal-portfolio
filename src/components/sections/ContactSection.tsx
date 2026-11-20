@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, Copy, Check, FileText, ArrowUpRight, Sparkles } from 'lucide-react'
-import { GithubIcon, LinkedinIcon } from '../ui/Icons'
+import { Mail, Phone, MapPin, Send, Copy, Check, FileText, ArrowUpRight, Sparkles, MessageSquare } from 'lucide-react'
+import { GithubIcon, LinkedinIcon, WhatsAppIcon } from '../ui/Icons'
 import { PERSONAL_INFO } from '../../data/portfolioData'
 import { soundEngine } from '../../utils/audio'
 import { downloadResume } from '../../utils/resumeGenerator'
@@ -59,9 +59,9 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
     setTimeout(() => {
       setIsSubmitting(false)
       setIsSent(true)
-      onToast('Message Prepared', 'Opening your email client to send message')
+      onToast('Email Prepared', 'Opening your email client to send message')
       window.open(mailtoUrl, '_blank')
-    }, 800)
+    }, 600)
   }
 
   return (
@@ -83,17 +83,58 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
             LET'S BUILD SOMETHING <span className="text-gradient-flame">GREAT.</span>
           </h2>
           <p className="font-space text-slate-400 text-base sm:text-lg max-w-2xl mt-4">
-            Available for full-stack engineering roles, AI product development, and innovative software initiatives. Reach out directly or dispatch a message below.
+            Available for full-stack engineering roles, software development, and innovative product initiatives. Connect directly via WhatsApp, email, or telephone.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-          {/* Left Column: Direct Contact Telemetry & Resume Card (5 cols) */}
+          {/* Left Column: Direct Contact Telemetry & WhatsApp Action (5 cols) */}
           <div className="lg:col-span-5 space-y-6">
+            {/* Prominent WhatsApp Quick Contact Card */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="rounded-3xl bg-gradient-to-br from-[#0e2118] via-[#0c1815] to-[#0a0f12] border border-emerald-500/40 p-6 sm:p-7 shadow-[0_0_35px_rgba(16,185,129,0.15)] relative overflow-hidden group hover:border-emerald-400 transition-all"
+            >
+              <div className="flex items-center gap-3.5 mb-3">
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                  <WhatsAppIcon className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-syne font-bold text-lg text-white">
+                    Direct Messaging
+                  </h3>
+                  <span className="font-mono text-xs text-emerald-400 flex items-center gap-1.5">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>INSTANT RECRUITER CONNECT</span>
+                  </span>
+                </div>
+              </div>
+
+              <p className="font-sans text-xs sm:text-sm text-slate-300 mb-5 leading-relaxed">
+                Connect with Kushal directly on WhatsApp for immediate conversations, role discussions, or interview inquiries.
+              </p>
+
+              <a
+                href={PERSONAL_INFO.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => soundEngine.playHover()}
+                onClick={() => soundEngine.playClick()}
+                data-cursor="WHATSAPP"
+                className="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 text-white font-space font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2.5 shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_40px_rgba(16,185,129,0.55)] transition-all active:scale-[0.98]"
+              >
+                <WhatsAppIcon className="w-5 h-5" />
+                <span>CHAT WITH ME ON WHATSAPP</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </motion.div>
+
             {/* Direct Channel Cards */}
             <div className="rounded-3xl bg-[#0c0c16]/90 border border-white/[0.08] p-6 sm:p-8 space-y-5 shadow-2xl">
               <h3 className="font-syne font-bold text-xl text-white mb-2">
-                Direct Communication Channels
+                Contact Channels
               </h3>
 
               {/* Email */}
@@ -218,7 +259,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
               </div>
 
               <p className="font-sans text-xs sm:text-sm text-slate-300 mb-5 leading-relaxed">
-                Download Kushal's formatted, ATS-compliant CV featuring verified project metrics, education (8.76 CGPA), internship, and skills.
+                Download Kushal's formatted, ATS-compliant CV featuring education (8.76 CGPA), internship, technical stack, and projects.
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-3">
@@ -250,7 +291,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
             </div>
           </div>
 
-          {/* Right Column: Interactive Message Dispatcher Form (7 cols) */}
+          {/* Right Column: Direct Message Email Form (7 cols) */}
           <div className="lg:col-span-7">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -263,7 +304,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                 Send a Direct Message
               </h3>
               <p className="font-sans text-xs sm:text-sm text-slate-400 mb-8">
-                Have an inquiry or project proposal? Fill out the parameters below to initiate contact.
+                Have a question or role opportunity? Complete the form below to launch your message directly into your email client.
               </p>
 
               {isSent ? (
@@ -272,10 +313,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                     <Check className="w-8 h-8" />
                   </div>
                   <h4 className="font-syne font-bold text-2xl text-white mb-2">
-                    Transmission Dispatched
+                    Message Formatted
                   </h4>
                   <p className="font-sans text-sm text-slate-300 max-w-md mb-6">
-                    Thank you, {formData.name}. Your message has been prepared and opened in your email client for sending directly to Kushal D S.
+                    Thank you, {formData.name}. Your message has been prepared in your email client to send directly to {PERSONAL_INFO.email}.
                   </p>
                   <button
                     onClick={() => {
@@ -330,7 +371,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                       type="text"
                       value={formData.subject}
                       onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                      placeholder="e.g. Full Stack Developer Opportunity / AI Project"
+                      placeholder="e.g. Software Development Role / Full Stack Opportunity"
                       className="w-full px-4 py-3 rounded-xl bg-[#111120] border border-white/10 focus:border-[#ff442b] focus:outline-none text-sm text-white placeholder-slate-500 font-sans transition-colors"
                     />
                   </div>
@@ -359,7 +400,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                     className="w-full py-4 rounded-xl bg-gradient-to-r from-[#ff3344] via-[#ff5722] to-[#ff8800] text-white font-space font-bold text-sm tracking-wider uppercase shadow-[0_0_25px_rgba(255,51,68,0.4)] hover:shadow-[0_0_40px_rgba(255,51,68,0.6)] transition-all flex items-center justify-center gap-2.5 active:scale-[0.99]"
                   >
                     <Send className="w-4 h-4" />
-                    <span>{isSubmitting ? 'DISPATCHING TRANSMISSION...' : 'DISPATCH MESSAGE'}</span>
+                    <span>{isSubmitting ? 'PREPARING MESSAGE...' : 'SEND VIA EMAIL CLIENT'}</span>
                   </button>
                 </form>
               )}

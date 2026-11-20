@@ -9,16 +9,11 @@ export const PERSONAL_INFO = {
   coordinates: '12.9716° N, 77.5946° E',
   email: 'kushalkush132003@gmail.com',
   phone: '+91 7204820475',
+  whatsappUrl: 'https://wa.me/917204820475?text=Hello%20Kushal%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.',
   github: 'https://github.com/Kushalds03',
   linkedin: 'https://www.linkedin.com/in/kushal-ds',
   summary:
-    'Computer Science undergraduate with hands-on experience in software development and full-stack application development. Skilled in Python, Java, SQL and RESTful API development, with project experience in machine learning, AI integration and database management.',
-  stats: [
-    { label: 'Academic CGPA', value: '8.76', suffix: '/10', description: 'BNM Institute of Technology' },
-    { label: 'Clinical ML Accuracy', value: '92', suffix: '%', description: 'Women’s Health AI Decision Engine' },
-    { label: 'Screening Efficiency', value: '45', suffix: '%', description: 'Reduction in Manual ATS Review Time' },
-    { label: 'Full Stack Systems', value: '3+', suffix: '', description: 'Production-ready Architectures' },
-  ]
+    'Computer Science undergraduate with hands-on experience in software development and full-stack application development. Skilled in Python, Java, SQL and RESTful API development, with project experience in machine learning, AI integration and database management.'
 }
 
 export const EDUCATION_DATA: EducationItem = {
@@ -38,9 +33,9 @@ export const EDUCATION_DATA: EducationItem = {
     'Machine Learning & Artificial Intelligence'
   ],
   highlights: [
-    'Maintained consistent high academic standing with an aggregate CGPA of 8.76/10.',
-    'Active participant in technical symposiums, hackathons, and software engineering workshops.',
-    'Deep practical focus on scalable systems, REST microservices, and AI integrations.'
+    'Consistent academic performance with an aggregate CGPA of 8.76/10.',
+    'Active participant in technical symposiums, hackathons, and software engineering initiatives.',
+    'Practical engineering focus on scalable systems, REST microservices, and AI integrations.'
   ]
 }
 
@@ -79,27 +74,10 @@ export const PROJECTS_DATA: Project[] = [
     category: 'AI & Machine Learning',
     tagline: 'Intelligent ATS scoring, semantic skill-gap extraction, and candidate matching powered by Gemini API.',
     description:
-      'A comprehensive full-stack platform that transforms recruitment by automatically parsing candidate resumes, benchmarking them against specific job descriptions using LLMs, and surfacing actionable ATS insights.',
+      'A full-stack AI-powered application that analyzes resumes, evaluates job compatibility, identifies skill gaps and provides ATS-related insights.',
     longDescription:
       'Engineered to eliminate manual resume screening friction. The system ingests resumes in PDF format, extracts structured textual data, and feeds it into Google Gemini API with custom prompt chains. It calculates a weighted compatibility score based on technical competencies, seniority levels, and domain experience, identifying exact skill deficits with clear improvement steps.',
-    stack: ['React.js', 'Node.js', 'Express.js', 'Gemini API', 'Prisma', 'SQLite', 'Tailwind CSS'],
-    metrics: [
-      {
-        label: 'Compatibility Accuracy',
-        value: '+30%',
-        subtext: 'Improvement in resume-job alignment evaluation accuracy'
-      },
-      {
-        label: 'Screening Time',
-        value: '-45%',
-        subtext: 'Reduction in manual candidate screening overhead'
-      },
-      {
-        label: 'Parsing Precision',
-        value: '99%',
-        subtext: 'Reliable text and metadata extraction from complex PDFs'
-      }
-    ],
+    stack: ['React.js', 'Node.js', 'Express.js', 'Gemini API', 'Prisma', 'SQLite'],
     features: [
       'AI Resume Analysis: Deep semantic parsing of technical summaries, experience, and project portfolios.',
       'Weighted Job Matching: Algorithmic scoring balancing primary requirements, secondary skills, and domain context.',
@@ -139,14 +117,14 @@ export async function evaluateResumeMatch(resumeText: string, jobSpec: string) {
 
   const analysis = JSON.parse(response.text);
   return {
-    compatibilityScore: analysis.score, // +30% accuracy over naive keyword search
+    compatibilityScore: analysis.score,
     skillGap: analysis.missingCompetencies,
     atsRating: analysis.atsCompatibility
   };
 }`
     },
-    githubUrl: 'https://github.com/Kushalds03',
-    liveDemoUrl: 'https://github.com/Kushalds03',
+    githubUrl: 'https://github.com/Kushalds03/AI-Powered-Resume-Analyzer-Job-Match-Assistant',
+    liveDemoUrl: 'https://github.com/Kushalds03/AI-Powered-Resume-Analyzer-Job-Match-Assistant',
     accentColor: '#ff3a2f'
   },
   {
@@ -156,27 +134,10 @@ export async function evaluateResumeMatch(resumeText: string, jobSpec: string) {
     category: 'AI & Machine Learning',
     tagline: 'Multi-condition diagnostic decision support combining ensemble ML, Explainable AI (SHAP), and Computer Vision.',
     description:
-      'An advanced healthcare intelligence platform providing risk stratification across 8 major women’s health conditions, coupling tabular ensemble classifiers with EfficientNetB0 ultrasound image feature extraction.',
+      'A machine learning-based application designed for clinical risk prediction across multiple women\'s health conditions, with explainable AI and ultrasound image analysis.',
     longDescription:
       'Designed to assist medical practitioners with rapid, interpretable diagnostic decision support. Incorporates Random Forest and XGBoost classifiers optimized through hyperparameter tuning, patient phenotypic clustering with K-Means, and deep neural network ultrasound classification with EfficientNetB0. Integrates SHAP values to explain every individual prediction for total clinical transparency.',
-    stack: ['Python', 'Streamlit', 'Random Forest', 'XGBoost', 'SHAP', 'K-Means', 'EfficientNetB0', 'Scikit-learn'],
-    metrics: [
-      {
-        label: 'Clinical Accuracy',
-        value: '92%',
-        subtext: 'Ensemble model validation accuracy across 8 health conditions'
-      },
-      {
-        label: 'Conditions Covered',
-        value: '8',
-        subtext: 'Simultaneous diagnostic risk assessment workflows'
-      },
-      {
-        label: 'Interpretability',
-        value: '100%',
-        subtext: 'SHAP-driven feature attribution for clinician trust'
-      }
-    ],
+    stack: ['Python', 'Streamlit', 'Random Forest', 'XGBoost', 'SHAP', 'K-Means', 'EfficientNetB0'],
     features: [
       'Multi-Condition Diagnostic Engine: Real-time risk forecasting across 8 distinct clinical scenarios.',
       'Ensemble Machine Learning: Dual Random Forest and XGBoost classification with soft-voting consensus.',
@@ -186,7 +147,7 @@ export async function evaluateResumeMatch(resumeText: string, jobSpec: string) {
       'Interactive Streamlit Interface: Doctor-friendly clinical cockpit with instant parameter tuning and report export.'
     ],
     contribution:
-      'Engineered data preprocessing pipelines, trained and validated ML models on clinical datasets, tuned hyperparameters achieving 92% accuracy, integrated SHAP explainability matrices, and developed the interactive Streamlit clinical dashboard.',
+      'Engineered data preprocessing pipelines, trained and validated ML models on clinical datasets, tuned hyperparameters, integrated SHAP explainability matrices, and developed the interactive Streamlit clinical dashboard.',
     architecture: {
       frontend: 'Streamlit interactive web dashboard with dynamic data visualizations and risk gauges',
       backend: 'Python scientific computing stack (NumPy, Pandas, Scikit-learn, PyTorch/TensorFlow)',
@@ -211,7 +172,7 @@ class ClinicalRiskPredictor:
     def predict_risk(self, patient_biomarkers):
         p_xgb = self.xgb.predict_proba(patient_biomarkers)[:, 1]
         p_rf = self.rf.predict_proba(patient_biomarkers)[:, 1]
-        ensemble_score = (0.6 * p_xgb) + (0.4 * p_rf) # 92% validation accuracy
+        ensemble_score = (0.6 * p_xgb) + (0.4 * p_rf)
         
         shap_values = self.explainer.shap_values(patient_biomarkers)
         return {
@@ -220,8 +181,8 @@ class ClinicalRiskPredictor:
             "status": "High Risk" if ensemble_score[0] > 0.65 else "Moderate"
         }`
     },
-    githubUrl: 'https://github.com/Kushalds03',
-    liveDemoUrl: 'https://github.com/Kushalds03',
+    githubUrl: undefined, // Pending link from user
+    liveDemoUrl: undefined,
     accentColor: '#ff6200'
   },
   {
@@ -231,27 +192,10 @@ class ClinicalRiskPredictor:
     category: 'Full Stack Web',
     tagline: 'High-performance team workspace featuring granular RBAC, sprint workflows, and real-time project analytics.',
     description:
-      'An enterprise-grade project management application designed for engineering squads to streamline task lifecycles, monitor sprint velocity, and collaborate via role-protected REST endpoints.',
+      'A full-stack project management and collaboration platform featuring secure authentication, role-based access control, project management, task tracking and dashboard analytics.',
     longDescription:
       'Engineered with modern full-stack web standards to solve team synchronization bottlenecks. Features JWT session handling with refresh token rotation, strict Role-Based Access Control (Admin, Team Lead, Developer, Viewer), interactive Kanban boards, and dynamic status telemetry backed by PostgreSQL and Prisma ORM.',
-    stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma', 'JWT', 'Tailwind CSS'],
-    metrics: [
-      {
-        label: 'Planning Overhead',
-        value: '-20%',
-        subtext: 'Reduction in sprint planning friction and status alignment'
-      },
-      {
-        label: 'Task Efficiency',
-        value: '+25%',
-        subtext: 'Increase in cross-functional task throughput and resolution rate'
-      },
-      {
-        label: 'Response Latency',
-        value: '<40ms',
-        subtext: 'Optimized PostgreSQL indexing and Prisma query caching'
-      }
-    ],
+    stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL', 'Prisma'],
     features: [
       'Robust Authentication & RBAC: Multi-tier permission model restricting sensitive actions to authorized roles.',
       'Sprint & Task Management: Drag-and-drop boards, priority matrix, custom labels, and due-date tracking.',
@@ -281,7 +225,6 @@ export async function updateTaskStatus(req: Request, res: Response) {
   const { status, resolutionNotes } = req.body;
   const user = req.user; // Verified by JWT RBAC middleware
 
-  // 25% efficiency boost through automated state tracking
   const updatedTask = await prisma.$transaction(async (tx) => {
     const task = await tx.task.update({
       where: { id: taskId },
@@ -304,8 +247,8 @@ export async function updateTaskStatus(req: Request, res: Response) {
   return res.status(200).json({ success: true, task: updatedTask });
 }`
     },
-    githubUrl: 'https://github.com/Kushalds03',
-    liveDemoUrl: 'https://github.com/Kushalds03',
+    githubUrl: 'https://github.com/Kushalds03/Teamflow-project-management',
+    liveDemoUrl: 'https://github.com/Kushalds03/Teamflow-project-management',
     accentColor: '#ff9000'
   }
 ]
@@ -315,59 +258,59 @@ export const TECH_STACK_DATA: SkillCategory[] = [
     category: 'Programming Languages',
     description: 'Core languages utilized for system logic, algorithms, scripting, and backend runtimes.',
     skills: [
-      { name: 'Python', level: 92, experience: '3+ Years', tags: ['Machine Learning', 'Data Analysis', 'Automation', 'Flask/FastAPI'] },
-      { name: 'Java', level: 88, experience: '2+ Years', tags: ['Object-Oriented Design', 'Multithreading', 'Enterprise Patterns'] },
-      { name: 'JavaScript (ES6+)', level: 90, experience: '2+ Years', tags: ['Async/Await', 'DOM', 'Functional Programming', 'Node.js'] },
-      { name: 'SQL', level: 86, experience: '2+ Years', tags: ['Complex Joins', 'Subqueries', 'Indexing', 'Schema Optimization'] }
+      { name: 'Python', tags: ['Machine Learning', 'Data Analysis', 'Automation', 'Flask/FastAPI'] },
+      { name: 'Java', tags: ['Object-Oriented Design', 'Multithreading', 'Enterprise Patterns'] },
+      { name: 'JavaScript (ES6+)', tags: ['Async/Await', 'DOM', 'Functional Programming', 'Node.js'] },
+      { name: 'SQL', tags: ['Complex Joins', 'Subqueries', 'Indexing', 'Schema Optimization'] }
     ]
   },
   {
     category: 'Frontend Development',
     description: 'Crafting responsive, high-performance interfaces with modern client-side toolchains.',
     skills: [
-      { name: 'React.js', level: 92, experience: '2+ Years', tags: ['Hooks', 'State Management', 'Context API', 'Vite', 'Component Systems'] },
-      { name: 'HTML5 & Semantic Web', level: 95, experience: '3+ Years', tags: ['Accessibility (a11y)', 'SEO', 'Semantic Tags'] },
-      { name: 'CSS3 & Modern Styling', level: 92, experience: '3+ Years', tags: ['Flexbox', 'CSS Grid', 'Custom Keyframes', 'Design Systems'] },
-      { name: 'Tailwind CSS', level: 94, experience: '2+ Years', tags: ['Responsive Design', 'Utility Classes', 'Custom Themes'] }
+      { name: 'React.js', tags: ['Hooks', 'State Management', 'Context API', 'Vite', 'Component Systems'] },
+      { name: 'HTML5 & Semantic Web', tags: ['Accessibility (a11y)', 'SEO', 'Semantic Tags'] },
+      { name: 'CSS3 & Modern Styling', tags: ['Flexbox', 'CSS Grid', 'Custom Keyframes', 'Design Systems'] },
+      { name: 'Tailwind CSS', tags: ['Responsive Design', 'Utility Classes', 'Custom Themes'] }
     ]
   },
   {
     category: 'Backend Engineering',
     description: 'Scalable server-side architectures, RESTful microservices, and database controllers.',
     skills: [
-      { name: 'Node.js', level: 90, experience: '2+ Years', tags: ['Event Loop', 'Non-blocking I/O', 'Stream Processing', 'NPM'] },
-      { name: 'Express.js', level: 90, experience: '2+ Years', tags: ['REST API Design', 'Middleware Pipelines', 'JWT Authentication', 'Validation'] },
-      { name: 'RESTful API Architecture', level: 92, experience: '2+ Years', tags: ['HTTP Standards', 'Status Codes', 'Rate Limiting', 'Error Serialization'] }
+      { name: 'Node.js', tags: ['Event Loop', 'Non-blocking I/O', 'Stream Processing', 'NPM'] },
+      { name: 'Express.js', tags: ['REST API Design', 'Middleware Pipelines', 'JWT Authentication', 'Validation'] },
+      { name: 'RESTful API Architecture', tags: ['HTTP Standards', 'Status Codes', 'Rate Limiting', 'Error Serialization'] }
     ]
   },
   {
     category: 'Databases & Persistence',
     description: 'Relational and NoSQL data modeling, query optimization, and schema migrations.',
     skills: [
-      { name: 'MySQL', level: 88, experience: '2+ Years', tags: ['Relational Schemas', 'Stored Procedures', 'ACID Transactions'] },
-      { name: 'PostgreSQL', level: 86, experience: '2+ Years', tags: ['JSONB Queries', 'Prisma Integration', 'Relational Integrity'] },
-      { name: 'MongoDB', level: 84, experience: '1+ Years', tags: ['Document Models', 'Aggregation Pipelines', 'Mongoose'] },
-      { name: 'SQLite', level: 90, experience: '2+ Years', tags: ['Embedded DB', 'Local Persistence', 'Testing Harnesses'] }
+      { name: 'MySQL', tags: ['Relational Schemas', 'Stored Procedures', 'ACID Transactions'] },
+      { name: 'PostgreSQL', tags: ['JSONB Queries', 'Prisma Integration', 'Relational Integrity'] },
+      { name: 'MongoDB', tags: ['Document Models', 'Aggregation Pipelines', 'Mongoose'] },
+      { name: 'SQLite', tags: ['Embedded DB', 'Local Persistence', 'Testing Harnesses'] }
     ]
   },
   {
     category: 'Tools & DevOps',
     description: 'Developer toolchains, containerization, ORM modeling, and version management.',
     skills: [
-      { name: 'Git & GitHub', level: 92, experience: '3+ Years', tags: ['Branching Models', 'PR Review Workflows', 'Rebasing', 'Actions'] },
-      { name: 'Docker', level: 80, experience: '1+ Years', tags: ['Containerization', 'Dockerfiles', 'Multi-stage Builds'] },
-      { name: 'Prisma ORM', level: 88, experience: '2+ Years', tags: ['Schema Migrations', 'Type-safe Queries', 'Relation Modeling'] },
-      { name: 'UiPath', level: 78, experience: '1+ Years', tags: ['RPA Automation', 'Workflow Orchestration', 'Bot Development'] }
+      { name: 'Git & GitHub', tags: ['Branching Models', 'PR Review Workflows', 'Rebasing', 'Actions'] },
+      { name: 'Docker', tags: ['Containerization', 'Dockerfiles', 'Multi-stage Builds'] },
+      { name: 'Prisma ORM', tags: ['Schema Migrations', 'Type-safe Queries', 'Relation Modeling'] },
+      { name: 'UiPath', tags: ['RPA Automation', 'Workflow Orchestration', 'Bot Development'] }
     ]
   },
   {
     category: 'AI & Machine Learning',
     description: 'State-of-the-art LLM prompt architectures, classical machine learning, and explainability.',
     skills: [
-      { name: 'Gemini API', level: 90, experience: '1+ Years', tags: ['Structured Outputs', 'Prompt Engineering', 'Multimodal Inputs', 'Tokens'] },
-      { name: 'Machine Learning', level: 86, experience: '2+ Years', tags: ['Feature Engineering', 'Cross Validation', 'Metrics (ROC/AUC)'] },
-      { name: 'Random Forest & XGBoost', level: 88, experience: '2+ Years', tags: ['Ensemble Methods', 'Hyperparameter Tuning', 'Classification'] },
-      { name: 'Explainable AI (SHAP)', level: 85, experience: '1+ Years', tags: ['Feature Attribution', 'Model Interpretability', 'Beeswarm Plots'] }
+      { name: 'Gemini API', tags: ['Structured Outputs', 'Prompt Engineering', 'Multimodal Inputs', 'Tokens'] },
+      { name: 'Machine Learning', tags: ['Feature Engineering', 'Cross Validation', 'Classification'] },
+      { name: 'Random Forest & XGBoost', tags: ['Ensemble Methods', 'Hyperparameter Tuning', 'Decision Trees'] },
+      { name: 'Explainable AI (SHAP)', tags: ['Feature Attribution', 'Model Interpretability', 'Beeswarm Plots'] }
     ]
   }
 ]

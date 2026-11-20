@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Download, Printer, CheckCircle2, MapPin, Mail, Phone, ExternalLink } from 'lucide-react'
+import { X, Download } from 'lucide-react'
 import { PERSONAL_INFO, EDUCATION_DATA, EXPERIENCE_DATA, PROJECTS_DATA, TECH_STACK_DATA, CERTIFICATIONS_DATA } from '../../data/portfolioData'
 import { soundEngine } from '../../utils/audio'
 import { downloadResume } from '../../utils/resumeGenerator'
@@ -89,6 +89,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, onToa
                 <span>📍 {PERSONAL_INFO.location}</span>
                 <span>✉️ {PERSONAL_INFO.email}</span>
                 <span>📞 {PERSONAL_INFO.phone}</span>
+                <span>💬 WhatsApp: +91 7204820475</span>
                 <span>💻 github.com/Kushalds03</span>
                 <span>🔗 linkedin.com/in/kushal-ds</span>
               </div>
@@ -156,11 +157,10 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, onToa
                   <div key={proj.id}>
                     <div className="flex justify-between font-bold text-xs sm:text-sm text-slate-900">
                       <span>{proj.title}</span>
-                      <span className="text-[11px] font-mono font-normal text-slate-500">{proj.stack.slice(0, 4).join(', ')}</span>
+                      <span className="text-[11px] font-mono font-normal text-slate-500">{proj.stack.join(', ')}</span>
                     </div>
                     <ul className="list-disc pl-5 mt-1 space-y-0.5 text-xs text-slate-700">
-                      <li>{proj.tagline}</li>
-                      <li><strong>Key Metrics:</strong> {proj.metrics.map((m) => `${m.label}: ${m.value}`).join(' | ')}</li>
+                      <li>{proj.description}</li>
                       <li><strong>Contribution:</strong> {proj.contribution}</li>
                     </ul>
                   </div>

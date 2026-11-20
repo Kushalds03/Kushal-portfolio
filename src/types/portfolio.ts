@@ -7,11 +7,6 @@ export interface Project {
   description: string
   longDescription: string
   stack: string[]
-  metrics: {
-    label: string
-    value: string
-    subtext: string
-  }[]
   features: string[]
   contribution: string
   architecture: {
@@ -26,7 +21,7 @@ export interface Project {
     filename: string
     code: string
   }
-  githubUrl: string
+  githubUrl?: string // Optional: undefined if repo is pending
   liveDemoUrl?: string
   accentColor: string
 }
@@ -36,8 +31,6 @@ export interface SkillCategory {
   description: string
   skills: {
     name: string
-    level: number // 1 - 100
-    experience: string
     tags: string[]
     iconName?: string
   }[]

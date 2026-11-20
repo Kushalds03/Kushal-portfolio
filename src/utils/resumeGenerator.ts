@@ -4,7 +4,7 @@ import { soundEngine } from './audio'
 export function downloadResume() {
   soundEngine.playSuccess()
 
-  // Trigger high-tech celebratory confetti with crimson and amber embers
+  // Trigger celebratory confetti with crimson and amber embers
   confetti({
     particleCount: 80,
     spread: 70,
@@ -98,10 +98,6 @@ export function downloadResume() {
       font-weight: bold;
       color: #1e293b;
     }
-    .metric-badge {
-      font-weight: 600;
-      color: #b91c1c;
-    }
   </style>
 </head>
 <body>
@@ -111,6 +107,7 @@ export function downloadResume() {
     <span>📍 Bengaluru, India</span>
     <span>✉️ kushalkush132003@gmail.com</span>
     <span>📞 +91 7204820475</span>
+    <span>💬 WhatsApp: +91 7204820475</span>
     <span>💻 github.com/Kushalds03</span>
     <span>🔗 linkedin.com/in/kushal-ds</span>
   </div>
@@ -118,7 +115,7 @@ export function downloadResume() {
   <div class="section">
     <h2>Professional Summary</h2>
     <p style="margin: 0; color: #334155;">
-      Computer Science undergraduate with hands-on experience in software development and full-stack application development. Skilled in Python, Java, SQL and RESTful API development, with project experience in machine learning, AI integration and database management. Proven record of delivering resilient web applications, intelligent automation, and clinical predictive modeling with 92% accuracy.
+      Computer Science undergraduate with hands-on experience in software development and full-stack application development. Skilled in Python, Java, SQL and RESTful API development, with project experience in machine learning, AI integration and database management. Proven record of delivering resilient web applications, intelligent automation, and clinical predictive modeling systems.
     </p>
   </div>
 
@@ -148,9 +145,9 @@ export function downloadResume() {
       <span>Remote / Hybrid</span>
     </div>
     <ul>
-      <li>Developed responsive, enterprise-grade full-stack applications using React.js, Node.js, and SQL databases.</li>
+      <li>Developed responsive, full-stack applications using React.js, Node.js, and SQL databases.</li>
       <li>Architected and integrated robust RESTful APIs with comprehensive request validation and error serialization.</li>
-      <li>Improved backend computational logic and optimized SQL database queries, enhancing data retrieval efficiency.</li>
+      <li>Improved backend computational logic and optimized SQL database queries, enhancing data retrieval speed.</li>
       <li>Engineered accessible, pixel-perfect user interfaces with responsive component hierarchies.</li>
       <li>Maintained continuous version control workflows utilizing Git and GitHub for collaborative branch reviews.</li>
     </ul>
@@ -164,10 +161,9 @@ export function downloadResume() {
       <span>React.js, Node.js, Express.js, Gemini API, Prisma, SQLite</span>
     </div>
     <ul>
-      <li>Engineered an AI-driven recruitment engine that parses PDF resumes and evaluates alignment against job requirements.</li>
-      <li>Integrated Google Gemini API with structured schema prompts for deep semantic skill-gap extraction and ATS scoring.</li>
-      <li>Achieved a <span class="metric-badge">30% improvement</span> in resume-job compatibility evaluation accuracy.</li>
-      <li>Delivered a <span class="metric-badge">45% reduction</span> in manual candidate screening overhead for recruiters.</li>
+      <li>Engineered an AI-driven recruitment engine that parses PDF resumes and evaluates alignment against job specifications.</li>
+      <li>Integrated Google Gemini API with structured schema prompts for deep semantic skill-gap extraction and ATS scoring insights.</li>
+      <li>Streamlined candidate-job matching evaluation and automated resume screening feedback workflows.</li>
     </ul>
 
     <div class="job-header">
@@ -176,8 +172,8 @@ export function downloadResume() {
     </div>
     <ul>
       <li>Built a multi-condition clinical risk prediction engine spanning 8 distinct women's health conditions.</li>
-      <li>Trained ensemble classifiers (Random Forest & XGBoost) reaching <span class="metric-badge">92% model validation accuracy</span>.</li>
-      <li>Integrated Explainable AI using SHAP for patient-level feature attribution to ensure complete clinician trust.</li>
+      <li>Trained ensemble classifiers (Random Forest & XGBoost) for diagnostic decision support across clinical biomarker datasets.</li>
+      <li>Integrated Explainable AI using SHAP for patient-level feature attribution to ensure complete clinician trust and transparency.</li>
       <li>Incorporated EfficientNetB0 transfer learning for ultrasound imaging analysis and K-Means for patient risk clustering.</li>
     </ul>
 
@@ -187,25 +183,25 @@ export function downloadResume() {
     </div>
     <ul>
       <li>Constructed a collaborative project workspace featuring JWT authentication and granular Role-Based Access Control (RBAC).</li>
-      <li>Engineered high-throughput REST APIs and dashboard analytics for sprint tracking, Kanban boards, and task statuses.</li>
-      <li>Achieved a <span class="metric-badge">20% reduction</span> in sprint planning overhead and <span class="metric-badge">25% increase</span> in team task management efficiency.</li>
+      <li>Engineered REST APIs and dashboard analytics for sprint tracking, Kanban boards, and task status monitoring.</li>
+      <li>Optimized relational database queries via Prisma ORM for seamless team project synchronization.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>Technical Skills</h2>
-    <div class="skill-group"><span class="skill-title">Programming:</span> Python, Java, JavaScript (ES6+), SQL</div>
-    <div class="skill-group"><span class="skill-title">Frontend:</span> React.js, HTML5, CSS3, Tailwind CSS, Responsive Design</div>
-    <div class="skill-group"><span class="skill-title">Backend:</span> Node.js, Express.js, RESTful API Development, Middleware</div>
-    <div class="skill-group"><span class="skill-title">Databases:</span> MySQL, PostgreSQL, SQLite, MongoDB</div>
-    <div class="skill-group"><span class="skill-title">DevOps & Tools:</span> Git, GitHub, Docker, Prisma ORM, UiPath</div>
-    <div class="skill-group"><span class="skill-title">AI & ML:</span> Google Gemini API, Machine Learning, Random Forest, XGBoost, SHAP</div>
+    <div class="skill-group"><span class="skill-title">Programming Languages:</span> Python, Java, JavaScript (ES6+), SQL</div>
+    <div class="skill-group"><span class="skill-title">Frontend Development:</span> React.js, HTML5, CSS3, Tailwind CSS, Responsive Design</div>
+    <div class="skill-group"><span class="skill-title">Backend Engineering:</span> Node.js, Express.js, RESTful API Development, Middleware</div>
+    <div class="skill-group"><span class="skill-title">Databases & Persistence:</span> MySQL, PostgreSQL, SQLite, MongoDB</div>
+    <div class="skill-group"><span class="skill-title">Tools & DevOps:</span> Git, GitHub, Docker, Prisma ORM, UiPath</div>
+    <div class="skill-group"><span class="skill-title">AI & Machine Learning:</span> Google Gemini API, Machine Learning, Random Forest, XGBoost, SHAP</div>
   </div>
 
   <div class="section">
     <h2>Certifications</h2>
     <ul>
-      <li><strong>Sigma Prime Certification – Full Stack Development:</strong> Apna College (React.js, Node.js, Express, SQL/NoSQL)</li>
+      <li><strong>Sigma Prime Certification – Full Stack Development:</strong> Apna College (React.js, Node.js, Express, SQL)</li>
       <li><strong>Full Stack Development Internship Certificate:</strong> Unified Mentors (Industry verified)</li>
       <li><strong>Java Programming Course:</strong> KnowledgeGate (Object-Oriented Programming & Data Structures)</li>
     </ul>

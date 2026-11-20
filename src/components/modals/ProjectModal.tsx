@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, ExternalLink, Cpu, CheckCircle2, Copy, Check, Terminal, Layers } from 'lucide-react'
+import { X, Cpu, CheckCircle2, Copy, Check, Terminal, Layers } from 'lucide-react'
 import { GithubIcon } from '../ui/Icons'
 import { Project } from '../../types/portfolio'
 import { soundEngine } from '../../utils/audio'
@@ -81,28 +81,6 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
               <p className="font-space text-slate-300 text-sm sm:text-base leading-relaxed">
                 {project.tagline}
               </p>
-            </div>
-
-            {/* Metrics Highlight Strip */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3.5">
-              {project.metrics.map((m) => (
-                <div
-                  key={m.label}
-                  className="p-4 rounded-2xl bg-[#0f0f1d] border border-white/[0.08] flex flex-col justify-between"
-                >
-                  <span className="font-mono text-[11px] text-slate-400 uppercase tracking-wider">
-                    {m.label}
-                  </span>
-                  <div className="my-1.5">
-                    <span className="font-syne font-extrabold text-3xl text-gradient-flame">
-                      {m.value}
-                    </span>
-                  </div>
-                  <span className="font-sans text-[11px] text-slate-400 leading-tight">
-                    {m.subtext}
-                  </span>
-                </div>
-              ))}
             </div>
 
             {/* Tab Switcher */}
@@ -250,16 +228,22 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose, on
 
           {/* Modal Action Footer */}
           <div className="flex items-center justify-between px-6 sm:px-8 py-5 border-t border-white/[0.08] bg-[#0c0c18]">
-            <a
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onMouseEnter={() => soundEngine.playHover()}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 font-space font-semibold text-xs text-white transition-colors"
-            >
-              <GithubIcon className="w-4 h-4" />
-              <span>INSPECT SOURCE CODE</span>
-            </a>
+            {project.githubUrl ? (
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => soundEngine.playHover()}
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 font-space font-semibold text-xs text-white transition-colors"
+              >
+                <GithubIcon className="w-4 h-4" />
+                <span>INSPECT SOURCE CODE</span>
+              </a>
+            ) : (
+              <span className="font-mono text-xs text-slate-500">
+                // Repository link available upon request
+              </span>
+            )}
 
             <button
               onClick={() => {

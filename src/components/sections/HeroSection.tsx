@@ -155,30 +155,16 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
         </motion.div>
       </div>
 
-      {/* Bottom Telemetry Ticker & Scroll Indicator */}
+      {/* Bottom Info Bar & Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.9, delay: 0.9 }}
-        className="relative z-10 max-w-7xl mx-auto w-full pt-8 border-t border-white/[0.08] flex flex-col md:flex-row items-center justify-between gap-6"
+        className="relative z-10 max-w-7xl mx-auto w-full pt-8 border-t border-white/[0.08] flex flex-col sm:flex-row items-center justify-between gap-6"
       >
-        {/* Real Metrics Ticker */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10 w-full md:w-auto">
-          {PERSONAL_INFO.stats.map((st) => (
-            <div key={st.label} className="flex flex-col">
-              <div className="flex items-baseline gap-1">
-                <span className="font-syne font-extrabold text-2xl sm:text-3xl text-white">
-                  {st.value}
-                </span>
-                <span className="font-mono text-sm text-[#ff442b] font-bold">
-                  {st.suffix}
-                </span>
-              </div>
-              <span className="font-mono text-[11px] text-slate-400 uppercase tracking-wider">
-                {st.label}
-              </span>
-            </div>
-          ))}
+        <div className="flex items-center gap-3 text-xs font-mono text-slate-400">
+          <span className="w-2 h-2 rounded-full bg-[#ff3344]" />
+          <span>BNM INSTITUTE OF TECHNOLOGY // COMPUTER SCIENCE & ENGINEERING</span>
         </div>
 
         {/* Scroll Indicator */}
@@ -186,7 +172,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
           onClick={handleScrollToProjects}
           onMouseEnter={() => soundEngine.playHover()}
           data-cursor="SCROLL"
-          className="hidden md:flex items-center gap-3 text-slate-400 hover:text-white transition-colors group"
+          className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors group"
         >
           <span className="font-mono text-xs uppercase tracking-widest text-slate-500 group-hover:text-[#ff442b] transition-colors">
             SCROLL TO EXPLORE
