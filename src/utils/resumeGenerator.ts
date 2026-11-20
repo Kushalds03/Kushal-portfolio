@@ -109,7 +109,7 @@ export function downloadResume() {
     <span>📞 +91 7204820475</span>
     <span>💬 WhatsApp: +91 7204820475</span>
     <span>💻 github.com/Kushalds03</span>
-    <span>🔗 linkedin.com/in/kushal-ds</span>
+    <span>🔗 linkedin.com/in/kushal-ds-586779299</span>
   </div>
 
   <div class="section">
@@ -190,20 +190,20 @@ export function downloadResume() {
 
   <div class="section">
     <h2>Technical Skills</h2>
-    <div class="skill-group"><span class="skill-title">Programming Languages:</span> Python, Java, JavaScript (ES6+), SQL</div>
-    <div class="skill-group"><span class="skill-title">Frontend Development:</span> React.js, HTML5, CSS3, Tailwind CSS, Responsive Design</div>
-    <div class="skill-group"><span class="skill-title">Backend Engineering:</span> Node.js, Express.js, RESTful API Development, Middleware</div>
-    <div class="skill-group"><span class="skill-title">Databases & Persistence:</span> MySQL, PostgreSQL, SQLite, MongoDB</div>
-    <div class="skill-group"><span class="skill-title">Tools & DevOps:</span> Git, GitHub, Docker, Prisma ORM, UiPath</div>
-    <div class="skill-group"><span class="skill-title">AI & Machine Learning:</span> Google Gemini API, Machine Learning, Random Forest, XGBoost, SHAP</div>
+    <div class="skill-group"><span class="skill-title">Programming Languages:</span> Java, JavaScript, SQL, Python (Basics)</div>
+    <div class="skill-group"><span class="skill-title">Frontend Development:</span> React.js, HTML, CSS</div>
+    <div class="skill-group"><span class="skill-title">Backend Development:</span> Node.js, Express.js, RESTful APIs</div>
+    <div class="skill-group"><span class="skill-title">Databases:</span> MySQL, MongoDB, PostgreSQL, SQLite</div>
+    <div class="skill-group"><span class="skill-title">Tools & Technologies:</span> Git, GitHub, Prisma, UiPath</div>
+    <div class="skill-group"><span class="skill-title">Core Subjects:</span> Object-Oriented Programming (OOP), DBMS</div>
   </div>
 
   <div class="section">
     <h2>Certifications</h2>
     <ul>
-      <li><strong>Sigma Prime Certification – Full Stack Development:</strong> Apna College (React.js, Node.js, Express, SQL)</li>
-      <li><strong>Full Stack Development Internship Certificate:</strong> Unified Mentors (Industry verified)</li>
-      <li><strong>Java Programming Course:</strong> KnowledgeGate (Object-Oriented Programming & Data Structures)</li>
+      <li><strong>Sigma Prime Certification – Full Stack Development:</strong> Apna College (2026)</li>
+      <li><strong>Full Stack Development Internship Certificate:</strong> Unified Mentors</li>
+      <li><strong>Java Programming Course:</strong> KnowledgeGate</li>
     </ul>
   </div>
 </body>

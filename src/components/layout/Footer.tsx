@@ -36,7 +36,7 @@ export const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto space-y-12">
         {/* Top Tier */}
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-10 border-b border-white/[0.06]">
-          {/* Logo & Coordinates */}
+          {/* Logo & Info */}
           <div className="space-y-2">
             <div className="flex items-center gap-3">
               <span className="font-syne font-extrabold text-2xl text-white tracking-wider">
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
             </div>
 
             <div className="px-4 py-2 rounded-xl bg-[#0c0c16] border border-white/10 text-slate-400">
-              <span>LAT: 12.9716° N | LONG: 77.5946° E</span>
+              <span>BENGALURU, INDIA</span>
             </div>
           </div>
         </div>

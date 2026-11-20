@@ -6,12 +6,11 @@ export const PERSONAL_INFO = {
   tagline: 'BUILDING DIGITAL EXPERIENCES. ENGINEERING INTELLIGENT SOLUTIONS.',
   subTagline: 'Full Stack Developer | AI Enthusiast | Computer Science Undergraduate',
   location: 'Bengaluru, India',
-  coordinates: '12.9716° N, 77.5946° E',
   email: 'kushalkush132003@gmail.com',
   phone: '+91 7204820475',
-  whatsappUrl: 'https://wa.me/917204820475?text=Hello%20Kushal%2C%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20connect.',
+  whatsappUrl: 'https://wa.me/917204820475',
   github: 'https://github.com/Kushalds03',
-  linkedin: 'https://www.linkedin.com/in/kushal-ds',
+  linkedin: 'https://www.linkedin.com/in/kushal-ds-586779299/',
   summary:
     'Computer Science undergraduate with hands-on experience in software development and full-stack application development. Skilled in Python, Java, SQL and RESTful API development, with project experience in machine learning, AI integration and database management.'
 }
@@ -207,11 +206,11 @@ class ClinicalRiskPredictor:
     contribution:
       'Designed PostgreSQL relational schemas with Prisma migrations, implemented secure JWT auth middlewares, wrote modular REST controllers with Prisma transactions, and crafted the responsive React frontend.',
     architecture: {
-      frontend: 'React.js with custom hooks, optimistic UI updates, and Tailwind UI system',
+      frontend: 'React.js with custom hooks, responsive component hierarchy, and optimistic UI updates',
       backend: 'Express.js modular MVC architecture with centralized error handling',
       database: 'PostgreSQL with relational foreign keys, indexes, and Prisma type safety',
       aiMl: 'Telemetry-based workload forecasting and task duration estimation heuristics',
-      infrastructure: 'Dockerized microservice environment with automated database seeding'
+      infrastructure: 'Modular Node.js service architecture with automated database seeding and Prisma migration engine'
     },
     codeSnippet: {
       language: 'typescript',
@@ -256,61 +255,58 @@ export async function updateTaskStatus(req: Request, res: Response) {
 export const TECH_STACK_DATA: SkillCategory[] = [
   {
     category: 'Programming Languages',
-    description: 'Core languages utilized for system logic, algorithms, scripting, and backend runtimes.',
+    description: 'Core languages utilized for software logic, object-oriented systems, and relational queries.',
     skills: [
-      { name: 'Python', tags: ['Machine Learning', 'Data Analysis', 'Automation', 'Flask/FastAPI'] },
-      { name: 'Java', tags: ['Object-Oriented Design', 'Multithreading', 'Enterprise Patterns'] },
-      { name: 'JavaScript (ES6+)', tags: ['Async/Await', 'DOM', 'Functional Programming', 'Node.js'] },
-      { name: 'SQL', tags: ['Complex Joins', 'Subqueries', 'Indexing', 'Schema Optimization'] }
+      { name: 'Java', tags: ['Object-Oriented Programming', 'Multithreading', 'Data Structures'] },
+      { name: 'JavaScript', tags: ['ES6+', 'Async / Await', 'DOM APIs'] },
+      { name: 'SQL', tags: ['Relational Queries', 'Joins', 'Schema Design'] },
+      { name: 'Python (Basics)', tags: ['Scripting & Automation', 'Core Syntax', 'Foundational Logic'] }
     ]
   },
   {
     category: 'Frontend Development',
-    description: 'Crafting responsive, high-performance interfaces with modern client-side toolchains.',
+    description: 'Building responsive, accessible, and structured client-side user interfaces.',
     skills: [
-      { name: 'React.js', tags: ['Hooks', 'State Management', 'Context API', 'Vite', 'Component Systems'] },
-      { name: 'HTML5 & Semantic Web', tags: ['Accessibility (a11y)', 'SEO', 'Semantic Tags'] },
-      { name: 'CSS3 & Modern Styling', tags: ['Flexbox', 'CSS Grid', 'Custom Keyframes', 'Design Systems'] },
-      { name: 'Tailwind CSS', tags: ['Responsive Design', 'Utility Classes', 'Custom Themes'] }
+      { name: 'React.js', tags: ['Component Architecture', 'Hooks & State', 'Context API'] },
+      { name: 'HTML', tags: ['Semantic Web', 'Document Structure', 'Accessibility'] },
+      { name: 'CSS', tags: ['Responsive Styling', 'Flexbox & CSS Grid', 'Custom Layouts'] }
     ]
   },
   {
-    category: 'Backend Engineering',
-    description: 'Scalable server-side architectures, RESTful microservices, and database controllers.',
+    category: 'Backend Development',
+    description: 'Scalable server-side architectures, RESTful APIs, and controller business logic.',
     skills: [
-      { name: 'Node.js', tags: ['Event Loop', 'Non-blocking I/O', 'Stream Processing', 'NPM'] },
-      { name: 'Express.js', tags: ['REST API Design', 'Middleware Pipelines', 'JWT Authentication', 'Validation'] },
-      { name: 'RESTful API Architecture', tags: ['HTTP Standards', 'Status Codes', 'Rate Limiting', 'Error Serialization'] }
+      { name: 'Node.js', tags: ['Event Loop', 'Server Runtime', 'NPM Modules'] },
+      { name: 'Express.js', tags: ['Middleware Pipelines', 'Routing', 'REST Services'] },
+      { name: 'RESTful APIs', tags: ['HTTP Standards', 'JSON Serialization', 'Endpoints'] }
     ]
   },
   {
-    category: 'Databases & Persistence',
-    description: 'Relational and NoSQL data modeling, query optimization, and schema migrations.',
+    category: 'Databases',
+    description: 'Relational and document persistence, table normalization, and query performance.',
     skills: [
-      { name: 'MySQL', tags: ['Relational Schemas', 'Stored Procedures', 'ACID Transactions'] },
-      { name: 'PostgreSQL', tags: ['JSONB Queries', 'Prisma Integration', 'Relational Integrity'] },
-      { name: 'MongoDB', tags: ['Document Models', 'Aggregation Pipelines', 'Mongoose'] },
-      { name: 'SQLite', tags: ['Embedded DB', 'Local Persistence', 'Testing Harnesses'] }
+      { name: 'MySQL', tags: ['Relational Schemas', 'ACID Transactions', 'Indexing'] },
+      { name: 'MongoDB', tags: ['Document Store', 'Collections', 'Aggregation'] },
+      { name: 'PostgreSQL', tags: ['Relational Integrity', 'Indexes', 'Constraints'] },
+      { name: 'SQLite', tags: ['Embedded Storage', 'Lightweight Relational Engine'] }
     ]
   },
   {
-    category: 'Tools & DevOps',
-    description: 'Developer toolchains, containerization, ORM modeling, and version management.',
+    category: 'Tools & Technologies',
+    description: 'Disciplined version control, automated workflow design, and type-safe ORM data modeling.',
     skills: [
-      { name: 'Git & GitHub', tags: ['Branching Models', 'PR Review Workflows', 'Rebasing', 'Actions'] },
-      { name: 'Docker', tags: ['Containerization', 'Dockerfiles', 'Multi-stage Builds'] },
-      { name: 'Prisma ORM', tags: ['Schema Migrations', 'Type-safe Queries', 'Relation Modeling'] },
-      { name: 'UiPath', tags: ['RPA Automation', 'Workflow Orchestration', 'Bot Development'] }
+      { name: 'Git', tags: ['Version Control', 'Branching Models', 'Commit History'] },
+      { name: 'GitHub', tags: ['Remote Repositories', 'Code Reviews', 'Collaboration'] },
+      { name: 'Prisma', tags: ['Type-safe ORM', 'Schema Migrations', 'Relational Client'] },
+      { name: 'UiPath', tags: ['RPA Automation', 'Workflow Orchestration'] }
     ]
   },
   {
-    category: 'AI & Machine Learning',
-    description: 'State-of-the-art LLM prompt architectures, classical machine learning, and explainability.',
+    category: 'Core Subjects',
+    description: 'Foundational computer science principles, database modeling, and software architectures.',
     skills: [
-      { name: 'Gemini API', tags: ['Structured Outputs', 'Prompt Engineering', 'Multimodal Inputs', 'Tokens'] },
-      { name: 'Machine Learning', tags: ['Feature Engineering', 'Cross Validation', 'Classification'] },
-      { name: 'Random Forest & XGBoost', tags: ['Ensemble Methods', 'Hyperparameter Tuning', 'Decision Trees'] },
-      { name: 'Explainable AI (SHAP)', tags: ['Feature Attribution', 'Model Interpretability', 'Beeswarm Plots'] }
+      { name: 'Object-Oriented Programming (OOP)', tags: ['Encapsulation', 'Inheritance', 'Polymorphism', 'Abstraction'] },
+      { name: 'DBMS', tags: ['Relational Architecture', 'Normalization', 'ER Modeling', 'Transaction Management'] }
     ]
   }
 ]
@@ -319,10 +315,10 @@ export const CERTIFICATIONS_DATA: Certification[] = [
   {
     id: 'sigma-prime',
     title: 'Sigma Prime Certification – Full Stack Development',
-    issuer: 'Apna College',
+    issuer: 'Apna College (2026)',
     badge: 'Apna College Verified',
-    date: '2024',
-    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'SQL', 'System Design'],
+    date: '2026',
+    skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'SQL'],
     description:
       'Rigorous industry-aligned full-stack engineering certification covering frontend component lifecycles, backend RESTful design, relational & document databases, and scalable web architectures.',
     verified: true

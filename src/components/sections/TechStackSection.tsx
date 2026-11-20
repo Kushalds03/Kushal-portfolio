@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Code, Cpu, Database, Wrench, Layers, Sparkles } from 'lucide-react'
+import { Code, Cpu, Database, Wrench, Layers, BookOpen } from 'lucide-react'
 import { TECH_STACK_DATA } from '../../data/portfolioData'
 import { soundEngine } from '../../utils/audio'
 
@@ -20,14 +20,14 @@ export const TechStackSection: React.FC = () => {
         return Code
       case 'Frontend Development':
         return Layers
-      case 'Backend Engineering':
+      case 'Backend Development':
         return Cpu
-      case 'Databases & Persistence':
+      case 'Databases':
         return Database
-      case 'Tools & DevOps':
+      case 'Tools & Technologies':
         return Wrench
-      case 'AI & Machine Learning':
-        return Sparkles
+      case 'Core Subjects':
+        return BookOpen
       default:
         return Code
     }
@@ -53,7 +53,7 @@ export const TechStackSection: React.FC = () => {
             MY DIGITAL <span className="text-gradient-flame">TOOLKIT.</span>
           </h2>
           <p className="font-space text-slate-400 text-base sm:text-lg max-w-2xl mt-4">
-            Curated technologies, frameworks, and AI toolchains applied across software development and production systems.
+            Curated technologies, frameworks, and core computer science proficiencies applied across software development and academic projects.
           </p>
         </div>
 

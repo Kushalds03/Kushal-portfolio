@@ -91,7 +91,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose, onToa
                 <span>📞 {PERSONAL_INFO.phone}</span>
                 <span>💬 WhatsApp: +91 7204820475</span>
                 <span>💻 github.com/Kushalds03</span>
-                <span>🔗 linkedin.com/in/kushal-ds</span>
+                <span>🔗 linkedin.com/in/kushal-ds-586779299</span>
               </div>
             </div>
 

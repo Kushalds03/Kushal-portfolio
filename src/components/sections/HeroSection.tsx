@@ -47,10 +47,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume }) => {
           <span className="font-mono text-xs text-slate-300 tracking-wider uppercase">
             {PERSONAL_INFO.location}
           </span>
-          <span className="text-white/20">|</span>
-          <span className="font-mono text-[11px] text-[#ff7700]">
-            {PERSONAL_INFO.coordinates}
-          </span>
         </motion.div>
 
         {/* Dramatic Name Reveal */}

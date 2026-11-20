@@ -126,7 +126,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                 className="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 text-white font-space font-bold text-xs sm:text-sm tracking-wider uppercase flex items-center justify-center gap-2.5 shadow-[0_0_25px_rgba(16,185,129,0.35)] hover:shadow-[0_0_40px_rgba(16,185,129,0.55)] transition-all active:scale-[0.98]"
               >
                 <WhatsAppIcon className="w-5 h-5" />
-                <span>CHAT WITH ME ON WHATSAPP</span>
+                <span>CONTACT ME ON WHATSAPP</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
             </motion.div>
@@ -195,7 +195,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                 </button>
               </div>
 
-              {/* Location & Coordinates */}
+              {/* Location */}
               <div className="p-4 rounded-2xl bg-[#11111f] border border-white/[0.06] flex items-center gap-3.5">
                 <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
                   <MapPin className="w-5 h-5" />
@@ -206,9 +206,6 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenResume, on
                   </span>
                   <p className="font-space font-medium text-xs sm:text-sm text-white">
                     {PERSONAL_INFO.location} • IST (UTC+5:30)
-                  </p>
-                  <p className="font-mono text-[10px] text-slate-400">
-                    LAT/LONG: {PERSONAL_INFO.coordinates}
                   </p>
                 </div>
               </div>
