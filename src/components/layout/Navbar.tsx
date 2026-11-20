@@ -92,15 +92,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onToast }) => {
                 KD
               </div>
             </div>
-            <div className="flex flex-col">
-              <span className="font-syne font-extrabold text-sm tracking-wider text-white group-hover:text-[#ff442b] transition-colors">
-                KUSHAL D S
-              </span>
-              <div className="flex items-center gap-1.5 text-[10px] font-mono text-slate-400">
-                <span className="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                <span>DEV-NODE // BLR</span>
-              </div>
-            </div>
+            <span className="font-syne font-extrabold text-base tracking-wider text-white group-hover:text-[#ff442b] transition-colors">
+              KUSHAL D S
+            </span>
           </a>
 
           {/* Desktop Navigation */}
