@@ -190,7 +190,7 @@ export function downloadResume() {
 
   <div class="section">
     <h2>Technical Skills</h2>
-    <div class="skill-group"><span class="skill-title">Programming Languages:</span> Java, JavaScript, SQL, Python (Basics)</div>
+    <div class="skill-group"><span class="skill-title">Programming Languages:</span> Java, JavaScript, SQL, Python</div>
     <div class="skill-group"><span class="skill-title">Frontend Development:</span> React.js, HTML, CSS</div>
     <div class="skill-group"><span class="skill-title">Backend Development:</span> Node.js, Express.js, RESTful APIs</div>
     <div class="skill-group"><span class="skill-title">Databases:</span> MySQL, MongoDB, PostgreSQL, SQLite</div>

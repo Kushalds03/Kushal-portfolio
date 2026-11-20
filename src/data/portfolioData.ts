@@ -260,7 +260,7 @@ export const TECH_STACK_DATA: SkillCategory[] = [
       { name: 'Java', tags: ['Object-Oriented Programming', 'Multithreading', 'Data Structures'] },
       { name: 'JavaScript', tags: ['ES6+', 'Async / Await', 'DOM APIs'] },
       { name: 'SQL', tags: ['Relational Queries', 'Joins', 'Schema Design'] },
-      { name: 'Python (Basics)', tags: ['Scripting & Automation', 'Core Syntax', 'Foundational Logic'] }
+      { name: 'Python', tags: ['Scripting & Automation', 'Core Syntax', 'Data Processing'] }
     ]
   },
   {
