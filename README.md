@@ -1,32 +1,79 @@
-# React + TypeScript + Vite
+# Kushal D S — Cinematic Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+> **"Building Digital Experiences. Engineering Intelligent Solutions."**  
+> A premium, cinematic, interactive developer portfolio showcasing full-stack systems, machine learning pipelines, and generative AI applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌟 Live Preview & System Access
 
-## React Compiler
+The portfolio preview server is currently running:
+- **Local URL:** `http://localhost:5173/`
+- **Network URL:** `http://192.168.1.7:5173/`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+To start or build manually:
+```bash
+# Start development server
+npm run dev
 
-## Expanding the Oxlint configuration
+# Create optimized production build
+npm run build
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+# Preview production build
+npm run preview
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 🚀 Key Sections & Architecture
+
+1. **Section 1: Cinematic Intro / Hero**
+   - Interactive Three.js 3D WebGL cyber core with dual nested wireframes, orbital rings, and rising ember particles responding to mouse parallax.
+   - Oversized editorial typography featuring **KUSHAL D S**.
+   - Live quantitative telemetry bar: **8.76/10 CGPA (BNMIT)**, **92% Clinical ML Accuracy**, **-45% Screening Overhead Reduction**, **3+ Full-Stack Systems**.
+   - Direct call-to-actions: *View Selected Work*, *Download Resume (PDF)*, *GitHub*, *LinkedIn*.
+
+2. **Section 2: About Me ("BEYOND THE CODE.")**
+   - High-impact Bento-grid architecture.
+   - Academic pedigree: **BNM Institute of Technology (2023–Present)**, B.E. Computer Science, **8.76 / 10 CGPA**.
+   - Engineering philosophy & core development specializations.
+
+3. **Section 3: Experience (Career Timeline)**
+   - **Unified Mentors** — *Full Stack Developer Intern* (July 2025 – October 2025).
+   - 4 Technical Pillars: React Frontend Engineering, Node.js Backend & REST APIs, SQL Database Operations, Git/GitHub Collaboration.
+
+4. **Section 4: Selected Projects (Deep Interactive Showcase)**
+   - **Project 01: AI-Powered Resume Analyzer & Job Match Assistant**
+     - *Stack:* React.js, Node.js, Express.js, Gemini API, Prisma, SQLite.
+     - *Metrics:* +30% compatibility evaluation accuracy, -45% screening overhead reduction.
+   - **Project 02: Women's Health AI – Clinical Risk Prediction & Decision Support System**
+     - *Stack:* Python, Streamlit, Random Forest, XGBoost, SHAP, K-Means, EfficientNetB0.
+     - *Metrics:* 92% model accuracy across 8 health conditions.
+   - **Project 03: TeamFlow – Project Management & Collaboration Platform**
+     - *Stack:* React.js, Node.js, Express.js, PostgreSQL, Prisma.
+     - *Metrics:* -20% sprint planning overhead, +25% team task efficiency.
+   - *Deep Dive Drawer / Modal:* Architecture diagrams, feature matrices, interactive code snippets with one-click copy.
+
+5. **Section 5: Tech Stack ("MY DIGITAL TOOLKIT.")**
+   - 6 categorized groups: Programming Languages, Frontend Development, Backend Engineering, Databases & Persistence, Tools & DevOps, AI & Machine Learning.
+   - Interactive live CLI terminal simulation running Gemini inference, ML evaluations, and Prisma migrations.
+
+6. **Section 6: Certifications**
+   - **Sigma Prime Certification – Full Stack Development:** Apna College.
+   - **Full Stack Development Internship Certificate:** Unified Mentors.
+   - **Java Programming Course:** KnowledgeGate.
+
+7. **Section 7: Contact ("LET'S BUILD SOMETHING GREAT.")**
+   - Direct email: `kushalkush132003@gmail.com` with one-click copy & mailto.
+   - Direct phone: `+91 7204820475` with one-click copy & call.
+   - GitHub: `https://github.com/Kushalds03`
+   - Interactive message dispatcher.
+   - Instant ATS-compliant Resume PDF generation + celebratory confetti.
+
+---
+
+## 🎨 Creative & Technical Highlights
+
+- **Synthesizer Sound Design:** Native Web Audio API synthesizer for zero-latency futuristic click, hover, celebratory chord, and ambient atmospheric drone (with one-click mute/unmute control).
+- **Custom Trailing Magnetic Cursor:** Smooth spring physics with dynamic hover state expansion.
+- **Responsive Layout:** 100% mobile-friendly with touch detection, optimized chunk splitting, and sub-1s build times.
